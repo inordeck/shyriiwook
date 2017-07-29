@@ -3,7 +3,7 @@ __
 LINKS
 
 github: https://github.com/inordeck/shyriiwook
-github pages: http://inordeck.github.io/shryiiwook
+github pages prototype: http://inordeck.github.io/shryiiwook/prototype
 heroku: https://protected-anchorage-30906.herokuapp.com/
 __
 API'S
@@ -53,6 +53,8 @@ JOURNAL
 __
 7/29/17
 - working on bootstrap prototype, error pushing to git
+- delete ols repo on github and create new repo
+- connect master to github pages for prototype
 __
 7/28/17
 - work on bootstrap prototype

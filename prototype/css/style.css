@@ -1,9 +1,27 @@
+/* 
+FONTS IN USE: 
+font-family: 'Plaster', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+font-weight: 300, 500, 500i, 900
+*/
+
 body{
 	text-align: center;
 }
 #logo {
 	margin: 100px 0 20px 0;
-	font-size: 150px;
+	height: 300px;
+}
+#navLogo {
+	display: inline;
+	height: 25px;
+}
+.navbar-brand{
+	font-family: 'Plaster', sans-serif;
+}
+h1{
+	font-family: 'Plaster', sans-serif;
 }
 h3 {
 	text-transform: uppercase;
@@ -24,6 +42,8 @@ p{
 }
 .vocabWord {
 	margin: 5px 0 35px 0;
+	font-family: 'Plaster', sans-serif;
+
 }
 #play {
 	padding: 15px;
