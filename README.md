@@ -3,6 +3,7 @@ __
 LINKS
 
 github: https://github.com/inordeck/shyriiwook
+github pages: http://inordeck.github.io/shryiiwook
 heroku: https://protected-anchorage-30906.herokuapp.com/
 __
 API'S
@@ -50,8 +51,11 @@ shyriiwook > public > images > wireframes
 __
 JOURNAL
 __
+7/29/17
+- working on bootstrap prototype, error pushing to git
+__
 7/28/17
-- 
+- work on bootstrap prototype
 
 __
 7/27/17
