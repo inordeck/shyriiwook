@@ -1,0 +1,35 @@
+body{
+	text-align: center;
+}
+#logo {
+	margin: 100px 0 20px 0;
+	font-size: 150px;
+}
+h3 {
+	text-transform: uppercase;
+}
+h4{
+	text-transform: uppercase;
+}
+p{
+	margin: 50px;
+	text-align: left;
+}
+.subjects {
+	font-size: 125px;
+	margin: 75px 25px 10px 25px;
+}
+.title {
+	margin: 50px 0 5px 0;
+}
+.vocabWord {
+	margin: 5px 0 35px 0;
+}
+#play {
+	padding: 15px;
+	font-size: 30px; 
+}
+.answers {
+	margin: 25px 0;
+	padding: 15px
+}
