@@ -1,13 +1,21 @@
 # shyriiwook
+
+/////
 __
 LINKS
 
 github: https://github.com/inordeck/shyriiwook
+
 github pages prototype: http://inordeck.github.io/shryiiwook/prototype
+
 heroku: https://protected-anchorage-30906.herokuapp.com/
+
+
+/////
 __
 API'S
 
+__
 star wars:
 documentation: https://swapi.co/documentation
 
@@ -34,10 +42,12 @@ Grcwowowaoo.
 Yoowara.
 Boorhra Fwoaoao.
 
-
+__
 responsive voice:
 https://responsivevoice.org/api/
 
+
+/////
 __
 WIREFRAMES
 shyriiwook > public > images > wireframes
@@ -55,6 +65,7 @@ __
 - working on bootstrap prototype, error pushing to git
 - delete ols repo on github and create new repo
 - connect master to github pages for prototype
+
 __
 7/28/17
 - work on bootstrap prototype
@@ -69,3 +80,4 @@ __
 - write out concept ideas and sketch wireframe thumbnails
 - refine wireframes
 
+/////
