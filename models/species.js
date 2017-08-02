@@ -1,4 +1,4 @@
 var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
-module.exports = Specis;
+module.exports = Species;

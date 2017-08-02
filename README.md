@@ -1,31 +1,31 @@
 # shyriiwook
 
-/////
-__
-LINKS
+# /////
+# LINKS
+# /////
 
 github: https://github.com/inordeck/shyriiwook
 
-github pages prototype: http://inordeck.github.io/shryiiwook/prototype
+github pages prototype: https://inordeck.github.io/shyriiwook/prototype/index.html
 
 heroku: https://protected-anchorage-30906.herokuapp.com/
 
+trello board: https://trello.com/b/Caf0vxlC/project-2-learn-shryiiwook
 
-/////
-__
-API'S
-
+# /////
+# API'S
+# /////
 __
 star wars:
 documentation: https://swapi.co/documentation
 
 https://swapi.co/api
-	/people
-	/films
-	/starships
-	/vehicles
-	/species
-	/planets
+	/people = 87
+	/films = 7
+	/starships = 37
+	/vehicles = 39
+	/species = 37
+	/planets = 61
 
 add: "?format=wookiee" to end for shyriiwook
 
@@ -44,12 +44,16 @@ Boorhra Fwoaoao.
 
 __
 responsive voice:
-https://responsivevoice.org/api/
+voice: indonesian female
 
 
 /////
-__
-WIREFRAMES
+
+
+# /////
+# WIREFRAMES
+# /////
+
 shyriiwook > public > images > wireframes
 
 ![wireframe 1](http://i.imgur.com/9QLXXhD.jpg)
@@ -57,14 +61,39 @@ shyriiwook > public > images > wireframes
 ![wireframe 2](http://i.imgur.com/wzbIZzz.jpg)
 
 
-/////
+# /////
+# DATABASE PROCESS OUTLINE
+# /////
+
+vocab page
+	- use a random number generator in order to get random id of specific data entry
+	- request data from swapi database using random id and wookie text generator
+	- push name into vocabWord and display it on page
+	- link play putton to speak vocabWord text
+	- use id number and get english name to match wookie name
+	- use random number generator to get two other results
+	- use random number generator to display all three results as answers
+	- on submit button check results
+	- if correct answer display correct answer and push wookie name + english name
+	- if else display try again screen
+	- correct answer: next link clicked = repeat process
+
+
+# /////
+# JOURNAL
+# /////
+
 __
-JOURNAL
+8/2/17
+- writting user stories for trello board
+
 __
 7/29/17
 - working on bootstrap prototype, error pushing to git
 - delete ols repo on github and create new repo
 - connect master to github pages for prototype
+- set up server and models for api endponts
+- pseudocode process for the database process
 
 __
 7/28/17
@@ -79,5 +108,3 @@ __
 - set up heroku project
 - write out concept ideas and sketch wireframe thumbnails
 - refine wireframes
-
-/////
