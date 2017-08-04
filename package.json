@@ -1,22 +1,44 @@
 {
   "name": "shyriiwook",
   "version": "1.0.0",
-  "description": "",
+  "description": "# ///// # LINKS # /////",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
+    "express-helpers": "^1.3.2",
+    "express-session": "^1.15.5",
+    "method-override": "^2.3.9",
     "mongoose": "^4.11.4",
-    "node": "^8.2.1"
+    "morgan": "^1.8.2",
+    "node": "^8.2.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^4.1.0",
     "mocha": "^3.4.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inordeck/shyriiwook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inordeck/shyriiwook/issues"
+  },
+  "homepage": "https://github.com/inordeck/shyriiwook#readme"
 }

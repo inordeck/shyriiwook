@@ -1,17 +1,23 @@
 // REQUIREMENTS //
-
 var express = require('express');
+var session = require('express-session');
 var app = express();
 
 var mongoose = require('mongoose');
 	mongoose.connect('mongodb://localhost:27017');
 
+var passport = require('passport');
+var flash = require('connect-flash');
+var morgan = require('morgan');
+var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var db = require('./models');
+
 var path = require('path');
 var methodOverride = require('method-override');
 var helpers = require('express-helpers');
 	helpers(app);
+
+var db = require('./models');
 
 
 // MIDDLEWEAR //
@@ -27,37 +33,30 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
+app.use(cookieParser());
+
+app.use(express.static(__dirname + '/public'));
+
+app.use(session({ secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS' })); 
+app.use(passport.initialize());
+app.use(passport.session()); 
+app.use(flash()); 
+
+// require passport
+require('./config/passport')(passport);
+app.use(function (req, res, next){
+	res.locals.currentUser = req.user;
+	next();
+});
+
 
 
 // ROUTES //
-
-// planets
-$.get('http://swapi.co/api/planets')
-	.done(function(data){
-		console.log(data);
-	});
-
-// people
-$.get('http://swapi.co/api/people')
-	.done(function(data){
-		console.log(data);
-	});
-
-// species
-$.get('http://swapi.co/api/species')
-	.done(function(data){
-		console.log(data);
-	});
-
-// starships
-$.get('http://swapi.co/api/starships')
-	.done(function(data){
-		console.log(data);
-	});
+var routes = require('./config/routes');
+app.use(routes);
 
 
 // START SERVER //
-
 // establish listen and local host
 app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening at http://localhost:3000/');

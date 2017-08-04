@@ -1,4 +1,4 @@
-var mongoose = require('mongoose'),
+/*var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
-module.exports = Planets;
+module.exports = Planets;*/
