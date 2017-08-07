@@ -1,0 +1,53 @@
+<% include ./partials/header.ejs %>
+<!-- nav is included in header partial -->
+
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row"> <!-- row 1 -->
+				<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<h4><span id="people" class="title glyphicon glyphicon-user"></span> people</h4>
+						<h1 class="vocabWord">Drarcaoac Vrawaworc</h1>
+					</div>
+				<div class="col-md-2"></div>
+			</div> <!-- end of row 1 -->
+			
+			<div class="row"> <!-- row 2 -->
+				<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-primary btn-lg"><span id="play" class="glyphicon glyphicon-play"></span></button>
+					</div>
+				<div class="col-md-4"></div>
+			</div> <!-- end of row 2 -->
+			
+			<div class="row"> <!-- row 3 -->
+				<div class="col-md-2"></div>
+
+				<div class="answers col-md-8">
+					<label class="radio-inline">
+  						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Answer 1
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Answer 2
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Answer 3
+						</label>
+				</div>
+				<div class="col-md-2"></div>
+			</div> <!-- end of row 3 -->		
+			
+			<div class="row"> <!-- row 4 -->
+				<div class="col-md-2"></div>
+				<div class="check col-md-8">
+					<button type="submit" class="btn btn-default">Check Answer</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div> <!-- end of row 4 -->
+
+		</div> <!-- end of container -->
+	</div> <!-- end of container fluid -->
+	
+<!-- footer, jquery, javascript and bootstrap is included in footer partial -->
+<% include ./partials/footer.ejs %>

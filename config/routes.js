@@ -14,12 +14,31 @@ function authenticatedUser(req, res, next) {
 	// if user is authenticated we continue the execution
 	if(req.isAuthenticated()) return next();
 	// otherwise request is always redirected to the home page
-	res.redirect('/');
+	res.redirect('/index.ejs');
 }
 
-router.route('/')
+
+// page link routes
+router.route('/index.ejs')
 	.get(staticsController.home);
 
+router.route('/subjects.ejs')
+ .get(staticsController.subjects);
+
+router.route('/people.ejs')
+ .get(staticsController.people);
+
+router.route('/planets.ejs')
+ .get(staticsController.planets);
+
+router.route('/species.ejs')
+ .get(staticsController.species);
+
+router.route('/starships.ejs')
+ .get(staticsController.starships);
+
+
+// signup and login routes
 router.route('/signup')
 	.get(usersController.getSignup)
 	.post(usersController.postSignup);

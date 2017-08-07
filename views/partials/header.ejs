@@ -4,28 +4,47 @@
 	<meta charset="UTF-8">
 	<title>Learn Shyriiwook</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Plaster|Roboto:300,500,500i,900" rel="stylesheet">
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Plaster|Roboto:300,500,500i,900" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 <body>
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<!-- brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class+"navbar-toogle collapsed" data-toggle="collapse" data-targets="#bs-example-navbar-collapse-1">
+				<button type="button" class="navbar-toogle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" area-expanded="false">
 					<span class="sr-only">toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">Learn Shyriiwook</a>
+				<a class="navbar-brand" href="index.ejs"><img id="navLogo" src="./images/chewbacca-fpo-icon.svg" alt="wookie icon"> Learn Shyriiwook</a>
 			</div> <!-- end of navbar-header -->
 
 			<!-- collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="user-menu">
-				<ul class="nav navbar-nav">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="index.ejs">Home</a></li>
+    				<li class="dropdown">
+    					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pick a Subject<span class="caret"></span></a>
+    				<ul class="dropdown-menu">
+    					<li><a href="subjects.ejs">Subjects</a></li>
+    					<li role="separator" class="divider"></li>
+	    				<li><a href="planets.ejs">Planets</a></li>
+	    				<li><a href="people.ejs">People</a></li>
+	    				<li><a href="species.ejs">Species</a></li>
+	    				<li><a href="starships.ejs">Starships</a></li>
+    				</ul>
+    				</li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
 					<% if (currentUser) { %>
 						<li><a href="/logout">logout <%= currentUser.local.firstName %></a></li>
 					<% } else { %>
@@ -33,6 +52,7 @@
 						<li><a href="/signup">signup</a></li>
 					<% } %>
 				</ul>
+
 			</div> <!-- end of navbar collapse -->
 		</div> <!-- end of container -->
 	</nav>

@@ -1,0 +1,41 @@
+<% include ./partials/header.ejs %>
+<!-- nav is included in header partial -->
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row"> <!-- row 1 -->
+				<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<h2>Pick a Subject to Start</h2>
+					</div>
+				<div class="col-md-2"></div>
+			</div> <!-- end of row 1 -->
+			<div class="row"> <!-- row 2 -->
+				<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<a href="planets.ejs"><span id="planets" class="subjects glyphicon glyphicon-globe"></span></a>
+						<h3><a href="planets.ejs">planets</a></h3>
+					</div>
+					<div class="col-md-4">
+						<a href="people.ejs"><span id="people" class="subjects glyphicon glyphicon-user"></span></a>
+						<h3><a href="people.ejs">people</a></h3>
+					</div>
+				<div class="col-md-2"></div>
+			</div> <!-- end of row 2 -->
+			<div class="row"> <!-- row 3 -->
+				<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<a href="species.ejs"><span id="species" class="subjects glyphicon glyphicon-eye-open"></span></a>
+						<h3><a href="species.ejs">species</a></h3>
+					</div>
+					<div class="col-md-4">
+						<a href="starships.ejs"><span id="starships" class="subjects glyphicon glyphicon-send"></span></a>
+						<h3><a href="starships.ejs">starships</a></h3>
+					</div>
+				<div class="col-md-2"></div>
+			</div> <!-- end of row 3 -->		
+		</div> <!-- end of container -->
+	</div> <!-- end of container-fluid -->
+
+<!-- footer, jquery, javascript and bootstrap is included in footer partial -->
+<% include ./partials/footer.ejs %>
