@@ -9,17 +9,18 @@ var methodOverride = require('method-override');
 var passport = require('passport');
 var usersController = require('../controllers/users');
 var staticsController = require('../controllers/statics');
+var peopleController = require('../controllers/people-controller');
 
 function authenticatedUser(req, res, next) {
 	// if user is authenticated we continue the execution
 	if(req.isAuthenticated()) return next();
 	// otherwise request is always redirected to the home page
-	res.redirect('/index.ejs');
+	res.redirect('/');
 }
 
 
 // page link routes
-router.route('/index.ejs')
+router.route('/')
 	.get(staticsController.home);
 
 router.route('/subjects.ejs')
@@ -47,27 +48,28 @@ router.route('/login')
 	.get(usersController.getLogin)
 	.post(usersController.postLogin);
 
-// router.route('/secret')
-// 	.get(authenticatedUser, usersController.secret);
+router.route('/secret')
+ 	.get(authenticatedUser, usersController.secret);
 
 router.route('/logout')
 	.get(usersController.getLogout);
 
-/*
+
 // ROUTES //
 
+/*
 // planets
 $.get('http://swapi.co/api/planets')
 	.done(function(data){
 		console.log(data);
 	});
+*/
 
 // people
-$.get('http://swapi.co/api/people')
-	.done(function(data){
-		console.log(data);
-	});
+router.route('http://swapi.co/api/people/:id/')
+	.get(peopleController.getOne);
 
+/*
 // species
 $.get('http://swapi.co/api/species')
 	.done(function(data){

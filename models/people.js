@@ -1,4 +1,10 @@
-/*var mongoose = require('mongoose'),
+var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
-module.exports = People;*/
+var PeopleSchema = mongoose.Schema({
+	name: String
+});
+
+var People = mongoose.model('People', PeopleSchema);
+
+module.exports = People;

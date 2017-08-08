@@ -37,7 +37,7 @@ app.use(cookieParser());
 
 app.use(express.static(__dirname + '/public'));
 
-app.use(session({ secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS' })); 
+app.use(session({ secret: 'what-a-wookie' })); 
 app.use(passport.initialize());
 app.use(passport.session()); 
 app.use(flash()); 

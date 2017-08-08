@@ -22,6 +22,7 @@ function species(req, res) {
 function starships(req, res) {
 	res.render('starships.ejs');
 }
+
 module.exports = {
 	home:home,
 	subjects:subjects,
