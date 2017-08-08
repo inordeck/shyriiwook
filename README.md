@@ -20,12 +20,12 @@ star wars:
 documentation: https://swapi.co/documentation
 
 https://swapi.co/api
-	/people = 87
-	/films = 7
-	/starships = 37
-	/vehicles = 39
-	/species = 37
-	/planets = 61
+-	/people = 87
+-	/films = 7
+-	/starships = 37
+-	/vehicles = 39
+-	/species = 37
+-	/planets = 61
 
 add: "?format=wookiee" to end for shyriiwook
 
@@ -41,6 +41,9 @@ Hrawh Sooanoo.
 Grcwowowaoo.
 Yoowara.
 Boorhra Fwoaoao.
+
+swapi node:
+https://www.npmjs.com/package/swapi-node
 
 /////
 
