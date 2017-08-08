@@ -42,10 +42,14 @@ Grcwowowaoo.
 Yoowara.
 Boorhra Fwoaoao.
 
+/////
+
 __
 responsive voice:
-voice: indonesian female
+link: https://responsivevoice.org/
+api: https://responsivevoice.org/api/
 
+voice: indonesian female
 
 /////
 
@@ -83,6 +87,34 @@ vocab page
 # JOURNAL
 # /////
 
+__
+8/8/17
+- working on passport log in errors
+- working on base set up for swapi api in config, controllers and models
+
+__
+8/7/17
+- rewrite passport code for login, signup and logout
+- worked once, then getting same 404 error
+
+__
+8/6/17
+- working on debugging passport code
+- write tests for swapi api and get tests to pass
+
+__
+8/5/17
+- still fighting passport errors!
+
+__
+8/4/17
+- write code for passport login, signup and log out
+- debugging passport errors
+
+__
+8/3/17
+- break up prototype html into ejs and create partials for header and footer
+- working on debugging nav bar and mobile menu
 __
 8/2/17
 - writting user stories for trello board
