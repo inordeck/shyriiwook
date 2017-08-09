@@ -2,6 +2,7 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 var PeopleSchema = mongoose.Schema({
+	id: Number,
 	name: String
 });
 

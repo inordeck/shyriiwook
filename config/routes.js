@@ -40,8 +40,6 @@ router.route('/starships.ejs')
 
 
 // signup and login routes
-
-
 router.route('/signup')
 	.get(usersController.getSignup)
 	.post(usersController.postSignup);
@@ -68,8 +66,8 @@ $.get('http://swapi.co/api/planets')
 */
 
 // people
-router.route('http://swapi.co/api/people/:id/')
-	.get(peopleController.getOne);
+router.route('/people')
+	.get(peopleController.getAllPeople);
 
 /*
 // species

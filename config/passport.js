@@ -48,7 +48,7 @@ module.exports = function(passport) {
 		passReqToCallback : true
 	}, function(req, email, password, callback) {
 		// search for user with this email
-		console.log()
+		console.log(email);
 		User.findOne({ 'local.email' : email}, function(err, user) {
 			if (err) {
 				console.log('login not working');
