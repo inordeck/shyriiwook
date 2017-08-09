@@ -20,7 +20,18 @@ body{
 .navbar-brand{
 	font-family: 'Plaster', sans-serif;
 }
+
+/* FORMS */
+label {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
 h1{
+	font-family: 'Plaster', sans-serif;
+}
+h2{
 	font-family: 'Plaster', sans-serif;
 }
 h3 {

@@ -25,12 +25,14 @@ module.exports = function(passport) {
 
 			// if the email already exists
 			if (user) {
-				return callback(null, false, req.flash('signupMessage', 'this email already exists.'));
+				console.log('user has been found');
+				return callback(null, false, req.flash('signupMessage', "this email already exists."));
 			} else {
 				// no user with this email / create a new user
+				console.log('no user with this email, continue');
 				var newUser = new User();
 				newUser.local.email = email;
-				newUser.local.password = newUser.encrypt(password);
+				newUser.local.password = newUser.hash(password);
 				newUser.save(function(err) {
 					if (err) throw err;
 					return callback(null, newUser);
@@ -48,14 +50,17 @@ module.exports = function(passport) {
 		// search for user with this email
 		User.findOne({ 'local-email' : email}, function(err, user) {
 			if (err) {
+				console.log('login now working');
 				return callback(err);
 			}
 			// if no user is found
 			if (!user) {
+				console.log('no user found');
 				return callback(null, false, req.flash('loginMessage', 'no user was found.'));
 			}
 			// wrong password
 			if (!user.validPassword(password)) {
+				console.log('wrong password');
 				return callback(null, false, req.flash('loginMessage', 'password is incorrect.'));
 			}
 			return callback(null, user);

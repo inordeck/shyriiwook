@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-mongoose.connect( process.env.MONGODB_URI || "localhost:3000" );
+mongoose.connect(	process.env.MONGODB_URI || 
+					"mongodb://localhost/shyriiwook-db" );
 
 module.exports.user = require("./user.js");
 

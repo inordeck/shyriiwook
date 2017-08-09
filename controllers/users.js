@@ -2,7 +2,7 @@ var passport = require('passport');
 
 // SIGNUP //
 // GET signup
-function getSignup(request, response, next) {
+function getSignup(request, response) {
 	response.render('signup.ejs', { message: request.flash('signupMessage') });
 }
 
@@ -18,12 +18,12 @@ function postSignup(request, response, next) {
 
 // LOGIN //
 // GET login
-function getLogin(request, response, next) {
+function getLogin(request, response) {
 	response.render('login.ejs', { message: request.flash('loginMessage') });
 }
 
 // POST login
-function postLogin(request, response) {
+function postLogin(request, response, next) {
 	var loginProperty = passport.authenticate('local-login', {
 		successRedirect : '/',
 		failureRedirect : '/login',
@@ -34,7 +34,7 @@ function postLogin(request, response) {
 
 // LOGOUT //
 // GET logout
-function getLogout (request, response, next) {
+function getLogout (request, response) {
 	request.logout();
 	response.redirect('/');
 }
