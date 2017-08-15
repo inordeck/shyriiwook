@@ -9,7 +9,7 @@ var morgan 			= require('morgan');
 var cookieParser 	= require('cookie-parser');
 var bodyParser 		= require('body-parser');
 var path 			= require('path');
-var methodOverride 	= require('method-override');
+// var methodOverride 	= require('method-override');
 var db 				= require('./models');
 var helpers 		= require('express-helpers');
 	helpers(app);
@@ -28,7 +28,7 @@ app.use(express.static(__dirname + '/public'));
 // body parser config to accept our datatypes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(methodOverride('_method'));
+// app.use(methodOverride('_method'));
 app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
