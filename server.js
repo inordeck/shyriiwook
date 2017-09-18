@@ -17,7 +17,7 @@ var helpers 		= require('express-helpers');
 
 // MIDDLEWEAR //
 // database
-mongoose.connect('mongodb://localhost/shyriiwook-db');
+// mongoose.connect('mongodb://localhost/shyriiwook-db');
 
 // serve static files in public and use ejs
 app.set('views', path.join(__dirname, 'views'));

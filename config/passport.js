@@ -17,6 +17,7 @@ module.exports = function(passport) {
 	passport.use('local-signup', new LocalStrategy({
 		usernameField : 'email',
 		passwordField : 'password',
+		affiliationField: 'affiliation',
 		passReqToCallback : true
 	}, function(req, email, password, callback) {
 		// find user with same email

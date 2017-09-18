@@ -2,8 +2,9 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 var PeopleSchema = mongoose.Schema({
-	id: Number,
-	name: String
+	swapiId: Number,
+	name: String,
+	wookieName: String
 });
 
 var People = mongoose.model('People', PeopleSchema);

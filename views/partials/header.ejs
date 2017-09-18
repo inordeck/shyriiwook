@@ -45,7 +45,7 @@
     			</ul>
     			<ul class="nav navbar-nav navbar-right">
 					<% if (currentUser) { %>
-						<li><a href="/logout">logout <%= currentUser.local.email %></a></li>
+						<li><a href="/logout">logout: <%= currentUser.local.affiliation %> <%= currentUser.local.email %></a></li>
 					<% } else { %>
 						<li><a href="/login">login</a></li>
 						<li><a href="/signup">signup</a></li>

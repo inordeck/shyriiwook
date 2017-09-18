@@ -66,8 +66,13 @@ $.get('http://swapi.co/api/planets')
 */
 
 // people
+/*
 router.route('/people')
 	.get(peopleController.getAllPeople);
+
+router.route('/people')
+	.post(peopleController.postPeople);
+*/
 
 /*
 // species

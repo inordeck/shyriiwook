@@ -7,36 +7,47 @@
 
 <div class="container-fluid">
 	<div class="container">
+
 		<div class="row"> <!-- row 1 -->
-			<div class="col-md-4"></div>
+			<div class="col-md-4"></div> <!-- WHITE SPACE -->
+
 			<div class="col-md-4">
-				<h2>signup</h2>
-			</div>
-			<div class="col-md-4"></div>
-		</div> <!-- end row 1 -->
-		<div class="row"> <!-- row 2 -->
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
+				<!-- TITLE -->
+				<div>
+					<h2>signup</h2>
+					<p>Sign up for an acount and track your progress.</p>
+				</div>
+
+				<!-- FORM -->
 				<form method="post" action="/signup">
+					<!-- email -->
 					<div class="form-group">
 						<label for="email">email</label>
 						<input class="form-control" type="text" name="email" id="email">
 					</div>
-			</div>
-			<div class="col-md-4"></div>
-		</div> <!-- end of row 2 -->
-		<div class="row"> <!-- row 3 -->
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
-				<div class="form-group">
-					<label for="email">password</label>
-					<input class="form-control" type="password" name="password" id="password">
-				</div>
-				<input class="btn btn-default" type="submit" value="sign up">
+					<!-- affiliation -->
+					<div class="form-group">
+						<label for="affiliation">affiliation</label>
+						<input class="form-control" type="affiliation" name="affiliation" id="affiliation">
+						<h6>(Empire, Rebelion, Jedi, Sith, Smuggler, Bounty Hunter, Moisture Farmer, Cantina Owner)</h6>
+					</div>
+					<!-- password -->
+					<div class="form-group">
+						<label for="password">password</label>
+						<input class="form-control" type="password" name="password" id="password">
+					</div>
+					<div class="form-group">
+						<input class="btn btn-default" type="submit" value="sign up">
+					</div>
 				</form>
-			</div>
-			<div class="col-md-4"></div>
-		</div> <!-- end of row 3 -->
+			</div> <!-- end of col 4 -->
+
+
+			<div class="col-md-4"></div> <!-- WHITE SPACE -->
+		</div> <!-- end of row 1 -->
+
+	</div> <!-- end of container -->
+</div> <!-- end of container fluid -->
 
 <!-- footer, jquery, javascript and bootstrap is included in footer partial -->
 <% include ./partials/footer.ejs %>
