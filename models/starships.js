@@ -1,4 +1,12 @@
-/*var mongoose = require('mongoose'),
+var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
-module.exports = Starships;*/
+var StarshipSchema = mongoose.Schema({
+	swapiId: Number,
+	name: String,
+	wookieName: String
+});
+
+var Starship = mongoose.model('Starship', StarshipSchema);
+
+module.exports = Starship;

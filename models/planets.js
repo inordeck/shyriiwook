@@ -1,4 +1,12 @@
-/*var mongoose = require('mongoose'),
+var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
-module.exports = Planets;*/
+var PlanetsSchema = mongoose.Schema({
+	swapiId: Number,
+	name: String,
+	wookieName: String
+});
+
+var Planets = mongoose.model('Planets', PlanetsSchema);
+
+module.exports = Planets;

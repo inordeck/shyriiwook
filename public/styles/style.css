@@ -6,9 +6,13 @@ font-family: 'Roboto', sans-serif;
 font-weight: 300, 500, 500i, 900
 */
 
+
+/* LAYOUT */
 body{
 	text-align: center;
 }
+
+/* NAV */
 #logo {
 	margin: 100px 0 20px 0;
 	height: 300px;
@@ -28,6 +32,7 @@ label {
 	text-transform: uppercase;
 }
 
+/* TYPOGRAPHY */
 h1{
 	font-family: 'Plaster', sans-serif;
 }
@@ -56,11 +61,13 @@ p{
 	font-family: 'Plaster', sans-serif;
 
 }
-#play {
-	padding: 15px;
-	font-size: 30px; 
-}
 .answer {
 	margin: 25px 0;
 	padding: 15px
+}
+
+/* BUTTONS */
+#play {
+	padding: 15px;
+	font-size: 30px; 
 }

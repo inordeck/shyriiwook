@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Learn Shyriiwook</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Plaster|Roboto:300,500,500i,900" rel="stylesheet">
 
@@ -45,7 +46,7 @@
     			</ul>
     			<ul class="nav navbar-nav navbar-right">
 					<% if (currentUser) { %>
-						<li><a href="/logout">logout: <%= currentUser.local.affiliation %> <%= currentUser.local.email %></a></li>
+						<li><a href="/logout">logout: <%= currentUser.local.affiliation %> <%=currentUser.local.email %></a></li>
 					<% } else { %>
 						<li><a href="/login">login</a></li>
 						<li><a href="/signup">signup</a></li>
