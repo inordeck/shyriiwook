@@ -1,6 +1,7 @@
 <% include ./partials/header.ejs %>
 <!-- nav is included in header partial -->
 
+<!-- PEOPLE -->
 	<div class="container-fluid">
 		<div class="container">
 
@@ -16,7 +17,8 @@
 			<div class="row"> <!-- row 2 -->
 				<div class="col-md-4"></div>
 					<div class="col-md-4">
-						<button type="button" class="btn btn-primary btn-lg"><span id="play" class="glyphicon glyphicon-play"></span></button>
+						<!-- responsive voice -->
+						<button type="button" class="btn btn-primary btn-lg js--triggerAnimation" onclick="responsiveVoice.speak('Drarcaoac Vrawaworc', 'Indonesian Female', {rate: 0.75});"><span id="play" class="glyphicon glyphicon-play"></span></button>
 					</div>
 				<div class="col-md-4"></div>
 			</div> <!-- end of row 2 -->
@@ -24,24 +26,17 @@
 			<div class="row"> <!-- row 3 -->
 				<div class="col-md-2"></div>
 
-				<div class="answers col-md-8">
-					<label class="radio-inline">
-  						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Answer 1
-					</label>
-					<label class="radio-inline">
-						<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Answer 2
-					</label>
-					<label class="radio-inline">
-						<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Answer 3
-						</label>
+				<div class="answer col-md-8">
+					<h5 class="english">Darth Vader</h5>
 				</div>
+
 				<div class="col-md-2"></div>
 			</div> <!-- end of row 3 -->		
 			
 			<div class="row"> <!-- row 4 -->
 				<div class="col-md-2"></div>
 				<div class="check col-md-8">
-					<button type="submit" class="btn btn-default">Check Answer</button>
+					<button type="submit" class="btn btn-default">Next Person</button>
 				</div>
 				<div class="col-md-2"></div>
 			</div> <!-- end of row 4 -->
