@@ -1,4 +1,12 @@
-/*var mongoose = require('mongoose'),
+var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
-module.exports = Species;*/
+var SpeciesSchema = mongoose.Schema({
+	swapiId: Number,
+	name: String,
+	wookieName: String
+});
+
+var Species = mongoose.model('Species', SpeciesSchema);
+
+module.exports = Species;
